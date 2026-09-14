@@ -137,8 +137,8 @@ function Index() {
               <p className="max-w-xl text-base leading-7 text-primary-foreground/70 lg:justify-self-end">Every talk is designed to be informative, relevant and entertaining—giving audiences new stories to take away and share.</p>
             </div>
             <div className="mt-12 grid border-t border-primary-foreground/20 md:grid-cols-2 lg:grid-cols-3">
-              {expertise.map((item) => (
-                <article key={item.title} className="border-b border-primary-foreground/20 py-7 md:px-6 md:odd:border-r lg:border-r lg:px-8 lg:nth-[3n]:border-r-0">
+              {expertise.map((item, index) => (
+                <article key={item.title} className={`border-b border-primary-foreground/20 py-7 md:px-6 lg:border-r lg:px-8 ${index % 3 === 2 ? "lg:border-r-0" : ""} ${index % 2 === 1 ? "md:border-r-0 lg:border-r" : "md:border-r"} ${index === expertise.length - 1 && expertise.length % 3 !== 0 ? "lg:border-r-0" : ""}`}>
                   <span className="text-xs font-semibold tracking-[0.16em] text-accent">{item.number}</span>
                   <h3 className="mt-6 font-display text-3xl">{item.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-primary-foreground/65">{item.text}</p>
@@ -181,10 +181,15 @@ function Index() {
             <p className="section-label text-accent-foreground/70">For event organisers</p>
             <h2 className="mt-6 font-display text-4xl leading-tight lg:text-7xl">Bring Stefan’s stories to your audience.</h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-accent-foreground/75">For cruise programmes, societies, universities and special-interest events, Stefan can shape a talk or series around your audience and itinerary.</p>
-            <div className="mx-auto mt-9 max-w-lg border border-accent-foreground/25 bg-accent-foreground/8 p-5">
-              <p className="text-sm font-semibold">Booking contact details coming soon</p>
-              <p className="mt-1 text-sm text-accent-foreground/65">Add an email address or telephone number here before publishing.</p>
+            <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:justify-center">
+              <Button asChild size="lg" className="h-13 rounded-none bg-accent-foreground px-6 text-accent shadow-none hover:bg-accent-foreground/90">
+                <a href="mailto:stefan@manorhouseguild.com?subject=Speaking%20enquiry">Email stefan@manorhouseguild.com <ArrowRight /></a>
+              </Button>
             </div>
+            <a href="mailto:stefan@manorhouseguild.com?subject=Speaking%20enquiry" className="mx-auto mt-6 inline-flex max-w-lg items-center justify-center gap-2 border border-accent-foreground/25 bg-accent-foreground/8 px-6 py-4 text-accent-foreground transition hover:bg-accent-foreground/12">
+              <span className="text-sm font-semibold">stefan@manorhouseguild.com</span>
+              <ArrowRight className="size-4" />
+            </a>
           </div>
         </section>
       </main>
