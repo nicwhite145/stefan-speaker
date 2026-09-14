@@ -137,8 +137,8 @@ function Index() {
               <p className="max-w-xl text-base leading-7 text-primary-foreground/70 lg:justify-self-end">Every talk is designed to be informative, relevant and entertaining—giving audiences new stories to take away and share.</p>
             </div>
             <div className="mt-12 grid border-t border-primary-foreground/20 md:grid-cols-2 lg:grid-cols-3">
-              {expertise.map((item) => (
-                <article key={item.title} className="border-b border-primary-foreground/20 py-7 md:px-6 md:odd:border-r lg:border-r lg:px-8 lg:nth-[3n]:border-r-0">
+              {expertise.map((item, index) => (
+                <article key={item.title} className={`border-b border-primary-foreground/20 py-7 md:px-6 lg:border-r lg:px-8 ${index % 3 === 2 ? "lg:border-r-0" : ""} ${index % 2 === 1 ? "md:border-r-0 lg:border-r" : "md:border-r"} ${index === expertise.length - 1 && expertise.length % 3 !== 0 ? "lg:border-r-0" : ""}`}>
                   <span className="text-xs font-semibold tracking-[0.16em] text-accent">{item.number}</span>
                   <h3 className="mt-6 font-display text-3xl">{item.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-primary-foreground/65">{item.text}</p>
