@@ -4,4 +4,4 @@
 - [x] Highlight previous speaking work and areas of expertise
 - [x] Add supplied portrait and book imagery
 - [x] Add booking email stefan@manorhouseguild.com
-- [ ] Validate mobile and desktop presentation
+- [x] Validate mobile and desktop presentation
