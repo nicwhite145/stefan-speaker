@@ -186,10 +186,6 @@ function Index() {
                 <a href="mailto:stefan@manorhouseguild.com?subject=Speaking%20enquiry">Email stefan@manorhouseguild.com <ArrowRight /></a>
               </Button>
             </div>
-            <a href="mailto:stefan@manorhouseguild.com?subject=Speaking%20enquiry" className="mx-auto mt-6 inline-flex max-w-lg items-center justify-center gap-2 border border-accent-foreground/25 bg-accent-foreground/8 px-6 py-4 text-accent-foreground transition hover:bg-accent-foreground/12">
-              <span className="text-sm font-semibold">stefan@manorhouseguild.com</span>
-              <ArrowRight className="size-4" />
-            </a>
           </div>
         </section>
       </main>
