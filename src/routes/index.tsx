@@ -145,6 +145,35 @@ function Index() {
                 </article>
               ))}
             </div>
+
+            <div className="mt-16">
+              <p className="section-label text-accent">The full programme</p>
+              <h3 className="mt-4 font-display text-3xl leading-tight lg:text-4xl">112 enrichment talks, by theme.</h3>
+              <p className="mt-4 max-w-2xl text-base leading-7 text-primary-foreground/70">Select a theme to see every talk it contains, with a short summary of each.</p>
+
+              <Accordion type="single" collapsible className="mt-8 border-t border-primary-foreground/20">
+                {talkCategories.map((category) => (
+                  <AccordionItem key={category.id} value={category.id} className="border-b border-primary-foreground/20">
+                    <AccordionTrigger className="gap-4 py-5 text-left hover:no-underline">
+                      <span className="flex flex-1 items-baseline justify-between gap-4">
+                        <span className="font-display text-2xl text-primary-foreground lg:text-3xl">{category.title}</span>
+                        <span className="text-xs font-semibold tracking-[0.16em] text-accent">{category.talks.length} talks</span>
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent className="pb-8">
+                      <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                        {category.talks.map((talk) => (
+                          <li key={talk.title}>
+                            <p className="font-display text-xl text-primary-foreground">{talk.title}</p>
+                            <p className="mt-1 text-sm leading-6 text-primary-foreground/65">{talk.summary}</p>
+                          </li>
+                        ))}
+                      </ul>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
           </div>
         </section>
 
