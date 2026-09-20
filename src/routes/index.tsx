@@ -2,7 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { ArrowDown, ArrowRight, BookOpen, Globe2, Menu, Mic2, Ship, X } from "lucide-react";
 import { useState } from "react";
 
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Button } from "@/components/ui/button";
+import { talkCategories } from "@/data/talks";
 import bookAsset from "@/assets/heroines-of-horticulture-cover.png.asset.json";
 import portraitAsset from "@/assets/stefan-white-portrait.png.asset.json";
 
