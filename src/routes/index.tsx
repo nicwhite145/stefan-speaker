@@ -87,7 +87,7 @@ function Index() {
               </div>
             </div>
             <div className="relative min-h-[470px] overflow-hidden lg:min-h-full">
-              <img src={portraitAsset.url} alt="Stefan White on the deck of a cruise ship" className="absolute inset-0 h-full w-full object-cover object-center" />
+              <img src="/stefan-white-portrait.png"} alt="Stefan White on the deck of a cruise ship" className="absolute inset-0 h-full w-full object-cover object-center" />
               <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_60%,var(--primary)_115%)] lg:bg-[linear-gradient(90deg,var(--primary)_0%,transparent_30%)]" />
               <div className="absolute bottom-5 right-5 border border-primary-foreground/25 bg-primary/80 px-4 py-3 backdrop-blur-sm">
                 <p className="text-xs uppercase tracking-[0.16em] text-primary-foreground/65">Speaking worldwide</p>
@@ -196,7 +196,7 @@ function Index() {
         <section id="author" className="scroll-mt-20 border-y border-border bg-surface py-20 lg:py-28">
           <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-[0.9fr_1.1fr] lg:px-10">
             <div className="mx-auto w-full max-w-md overflow-hidden border border-border bg-background p-3 shadow-[0_24px_70px_-38px_var(--shadow-color)]">
-              <img src={bookAsset.url} alt="Cover of Heroines of Horticulture by Stefan White" className="w-full" loading="lazy" />
+              <img src="/heroines-of-horticulture-cover.png"} alt="Cover of Heroines of Horticulture by Stefan White" className="w-full" loading="lazy" />
             </div>
             <div>
               <p className="section-label">Author</p>
