@@ -99,7 +99,7 @@ function Index() {
 
         <section aria-label="Speaking credentials" className="border-b border-border bg-surface">
           <div className="mx-auto grid max-w-7xl grid-cols-2 px-5 lg:grid-cols-4 lg:px-10">
-            {[["112", "Enrichment talks"], ["326", "Destination talks"], ["97", "Countries visited"], ["2007", "Cruise speaking since"]].map(([value, label], index) => (
+            {[["129", "Enrichment talks"], ["326", "Destination talks"], ["97", "Countries visited"], ["2007", "Cruise speaking since"]].map(([value, label], index) => (
               <div key={label} className={`py-7 lg:py-9 ${index % 2 ? "border-l" : ""} ${index > 1 ? "border-t lg:border-t-0" : ""} lg:border-l lg:first:border-l-0 border-border px-4 lg:px-8`}>
                 <p className="font-display text-4xl text-primary lg:text-5xl">{value}</p>
                 <p className="mt-1 text-xs font-semibold uppercase tracking-[0.14em] text-muted-foreground">{label}</p>
@@ -150,7 +150,7 @@ function Index() {
 
             <div className="mt-16">
               <p className="section-label text-accent">The full programme</p>
-              <h3 className="mt-4 font-display text-3xl leading-tight lg:text-4xl">112 enrichment talks, by theme.</h3>
+              <h3 className="mt-4 font-display text-3xl leading-tight lg:text-4xl">129 enrichment talks, by theme.</h3>
               <p className="mt-4 max-w-2xl text-base leading-7 text-primary-foreground/70">Select a theme to see every talk it contains, with a short summary of each.</p>
 
               <Accordion type="single" collapsible className="mt-8 border-t border-primary-foreground/20">

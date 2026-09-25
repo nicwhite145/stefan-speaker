@@ -152,4 +152,33 @@ export const talkCategories: TalkCategory[] = [
       { title: "Tito", summary: "A balanced look at Yugoslavia’s complex leader." },
     ],
   },
+  {
+    id: "oceans-and-seas",
+    title: "Our Oceans and Seas",
+    talks: [
+      { title: "The Mediterranean: The Greatest Sea of All", summary: "A relaxed journey through the Mediterranean’s incredible story — from dry basin to the lively mix of cultures of today, shaped by three great civilizations and three major religions." },
+      { title: "The Mighty Atlantic Ocean: Cradle of Modern Civilisation", summary: "How the Atlantic shaped the modern world — Viking voyages, daring explorers, naval battles and the huge movements of people and ideas across the ocean." },
+      { title: "Today’s Mediterranean Challenges", summary: "The pressures facing the Mediterranean today — climate change, pollution, overfishing and heavy tourism — and why it’s so hard for 21 nations to work together." },
+      { title: "The Evolution of an Ocean", summary: "A story-driven look at how the Atlantic changed over time — from possible prehistoric crossings to Irish monks, Vikings and the great ships that connected the world." },
+      { title: "The Red Sea", summary: "One of the planet’s most extraordinary tropical waters, home to more than 1,200 fish species — its ecosystems, challenges and the efforts to protect its dazzling marine life." },
+      { title: "How Climate Change Affects Our Seas and Oceans", summary: "A clear explanation of how rising seas, melting ice and warming waters are reshaping coastlines and marine ecosystems — and the scientific ideas that may help." },
+      { title: "Atlantic Firsts", summary: "An uplifting celebration of the Atlantic’s greatest “firsts” — record-breaking flights, daring swims, engineering breakthroughs and brave voyages." },
+      { title: "Phytoplankton: The Tiny Heroes of Our Planet", summary: "Tiny, invisible to the naked eye — and they produce half of the oxygen we breathe. Meet the ocean’s smallest but most important residents." },
+      { title: "The Mighty Indian Ocean", summary: "A wide-ranging look at the Indian Ocean’s history, wildlife, trade routes and cultural connections — and today’s challenges, from overfishing to climate pressures." },
+      { title: "The Baltic Sea", summary: "A fascinating mix of cultures, amber, brackish waters and Viking history — how nine surrounding nations shaped its story as a centre of trade and communication." },
+      { title: "Ocean Challenges: The Good News and the Bad", summary: "A balanced look at ocean pollution — how bad things really are, what’s being discovered, and the promising ideas that might help turn the tide." },
+    ],
+  },
+  {
+    id: "european-history",
+    title: "European History",
+    talks: [
+      { title: "The Mighty Venetian Empire", summary: "How Venice rose from beautiful city to a powerhouse ruling Mediterranean trade — and its legacy today, including the ambitious MOSE flood-barrier project." },
+      { title: "The Basque Country (Euskadi)", summary: "One of Europe’s most distinctive corners — its ancient language, strong identity, world-class food culture, and Bilbao’s shift from industrial port to cultural hotspot." },
+      { title: "The Extraordinary Story of the Vikings", summary: "The Vikings brought to life — not just raiders, but explorers, traders and settlers who shaped early European history and helped form modern nations." },
+      { title: "A Brief History of France", summary: "From early Homo sapiens through Charlemagne, William the Conqueror, Napoleon, revolutions and world wars — how France became the nation we know today." },
+      { title: "Spain — Its Long and Proud History", summary: "Moorish rule, global exploration and religious conflict — how Muslim Spain, the discovery of the Americas and centuries of rivalry forged Spain’s identity." },
+      { title: "Portugal — The Man Who Made Portugal", summary: "Henry the Navigator, the visionary prince whose ship designs, navigational breakthroughs and daring voyages made Portugal one of Europe’s great maritime powers." },
+    ],
+  },
 ];
