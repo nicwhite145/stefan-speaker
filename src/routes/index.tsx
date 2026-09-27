@@ -186,9 +186,10 @@ function Index() {
               <p className="mt-5 font-display text-3xl leading-snug text-primary">Entrepreneur, expedition leader, traveller and lifelong storyteller.</p>
             </div>
             <div className="space-y-6 text-lg leading-8 text-foreground/75">
-              <p>Stefan began his career with Cadbury before organising and leading an expedition from England to Jerusalem and back along the North African coast, circumnavigating the Mediterranean.</p>
-              <p>He went on to build Hurley Style into an international giftware business, selling original designs in 30 countries and winning the British Jewellery and Giftware Federation’s Gift of the Year award. After 45 years as an entrepreneur, he became a hotel inspector and then a public speaker.</p>
+              <p>Stefan began his career with Cadbury’s before organising and leading an expedition from England to Jerusalem and back along the North African coast, circumnavigating the Mediterranean following a historic route.</p>
+              <p>He went on to build Hurley Style into an international giftware business, selling original designs in 30 countries and winning the British Jewellery and Giftware Federation’s Gift of the Year award. After 45 years as an entrepreneur, he sold his successful business and his love of food led to him being appointed to be Hotel Inspector for Britain’s oldest established guide.</p>
               <p>A member of the Royal Horticultural Society and elected member of the Royal Historical Society, Stefan brings first-hand experience, deep curiosity and an international perspective to every engagement.</p>
+              <p>On cruise ships, he socialises with guests, volunteers to act as escort on excursions, hosts tables and is happy to be approached by guests with questions at any time.</p>
             </div>
           </div>
         </section>
