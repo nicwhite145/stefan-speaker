@@ -1,6 +1,9 @@
 export type Talk = { title: string; summary: string };
 export type TalkCategory = { id: string; title: string; talks: Talk[] };
 
+// Headline figure shown in the credentials strip and above the full programme.
+export const enrichmentTalkTotal = 112;
+
 export const talkCategories: TalkCategory[] = [
   {
     id: "mediterranean-history",
@@ -167,6 +170,7 @@ export const talkCategories: TalkCategory[] = [
       { title: "The Mighty Indian Ocean", summary: "A wide-ranging look at the Indian Ocean’s history, wildlife, trade routes and cultural connections — and today’s challenges, from overfishing to climate pressures." },
       { title: "The Baltic Sea", summary: "A mix of cultures, amber, brackish waters and Viking history — how nine surrounding nations shaped its story as a centre of trade and communication." },
       { title: "Ocean Challenges: The Good News and the Bad", summary: "A balanced look at ocean pollution — how severe it is, what’s being discovered, and the ideas that might help." },
+      { title: "The Mighty Venetian Empire", summary: "How a small city created a powerful navy and an impressive Empire." },
     ],
   },
   {
