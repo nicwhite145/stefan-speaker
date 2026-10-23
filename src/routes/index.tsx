@@ -70,7 +70,7 @@ function Index() {
         <section className="relative min-h-[760px] bg-primary pt-20 text-primary-foreground lg:min-h-[760px]">
           <div className="mx-auto grid max-w-7xl lg:min-h-[680px] lg:grid-cols-[1.08fr_0.92fr]">
             <div className="relative z-10 flex flex-col justify-center px-5 py-16 lg:px-10 lg:py-24">
-              <p className="section-label text-accent">Professional speaker · Author · Explorer</p>
+              <p className="section-label text-accent">Professional speaker · Author · Entrepreneur · Award-winning product designer · Raconteur · Explorer</p>
               <h1 className="mt-7 max-w-3xl font-display text-5xl leading-[1.02] font-medium sm:text-6xl lg:text-8xl">
                 A lifetime of stories, brought vividly to life.
               </h1>
@@ -186,7 +186,7 @@ function Index() {
               <p className="mt-5 font-display text-3xl leading-snug text-primary">Entrepreneur, expedition leader, traveller and lifelong storyteller.</p>
             </div>
             <div className="space-y-6 text-lg leading-8 text-foreground/75">
-              <p>Stefan began his career with Cadbury’s before organising and leading an expedition from England to Jerusalem and back along the North African coast, circumnavigating the Mediterranean following a historic route.</p>
+              <p>Stefan began his career with Cadbury’s before, in his twenties, organising and leading an expedition from England to Jerusalem, following an historic route taken by Pilgrims in the 11th century, returning back to England along the North African coast, thereby circumnavigating the entire Mediterranean Sea.</p>
               <p>He went on to build Hurley Style into an international giftware business, selling original designs in 30 countries and winning the British Jewellery and Giftware Federation’s Gift of the Year award. After 45 years as an entrepreneur, he sold his successful business and his love of food led to him being appointed to be Hotel Inspector for Britain’s oldest established guide.</p>
               <p>A member of the Royal Horticultural Society and elected member of the Royal Historical Society, Stefan brings first-hand experience, deep curiosity and an international perspective to every engagement.</p>
               <p>On cruise ships, he socialises with guests, volunteers to act as escort on excursions, hosts tables and is happy to be approached by guests with questions at any time.</p>
