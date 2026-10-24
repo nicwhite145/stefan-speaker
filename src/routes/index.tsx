@@ -70,7 +70,11 @@ function Index() {
         <section className="relative min-h-[760px] bg-primary pt-20 text-primary-foreground lg:min-h-[760px]">
           <div className="mx-auto grid max-w-7xl lg:min-h-[680px] lg:grid-cols-[1.08fr_0.92fr]">
             <div className="relative z-10 flex flex-col justify-center px-5 py-16 lg:px-10 lg:py-24">
-              <p className="section-label text-accent">Professional speaker · Author · Entrepreneur · Award-winning product designer · Raconteur · Explorer</p>
+              <p className="section-label text-accent">
+                {["Professional speaker", "Author", "Entrepreneur", "Raconteur", "Award-winning product designer", "Explorer"].map((item, index) => (
+                  <span key={item}>{index > 0 ? " · " : ""}<span className="whitespace-nowrap">{item}</span></span>
+                ))}
+              </p>
               <h1 className="mt-7 max-w-3xl font-display text-5xl leading-[1.02] font-medium sm:text-6xl lg:text-8xl">
                 A lifetime of stories, brought vividly to life.
               </h1>
@@ -187,10 +191,10 @@ function Index() {
             </div>
             <div className="space-y-6 text-lg leading-8 text-foreground/75">
               <p>Stefan began his career with Cadbury’s before, in his twenties, organising and leading an expedition from England to Jerusalem, following an historic route taken by Pilgrims in the 11th century, returning back to England along the North African coast, thereby circumnavigating the entire Mediterranean Sea.</p>
-              <p>He went on to build Hurley Style into an international giftware business, selling original designs in 30 countries and winning the British Jewellery and Giftware Federation’s Gift of the Year award. After 45 years as an entrepreneur, he sold his successful business and his love of food led to him being appointed to be Hotel Inspector for Britain’s oldest established guide.</p>
-              <p>He has designed and developed more than 450 different products, focusing on men’s Gifts, Decorative accessories, Wine accessories and wine themed Gifts. His best-selling items were the “Magnafloats” executive Game Paperweight, (winner of the prestigious British Gift and Jewellery Federation “Gift of the Year” award), the “Therm-au-Rouge” red wine warming sleeve, the “Bacchus” Decanter Driers, “the Ultimate Executive Lunch” Scratch’n Sniff book and “the development of the golf Ball” lidded Desk Tidy Box.</p>
-              <p>A member of the Royal Horticultural Society and elected member of the Royal Historical Society, Stefan brings first-hand experience, deep curiosity and an international perspective to every engagement.</p>
-              <p>On cruise ships, he socialises with guests, volunteers to act as escort on excursions, hosts tables and is happy to be approached by guests with questions at any time.</p>
+              <p>He founded and built Hurley Style into an international, market-leading Giftware business, selling original designs in 30 countries. He designed and developed more than 450 different products, focusing on Men’s Gifts, Decorative Accessories, Wine Accessories and wine-themed Gifts. His best-selling items were the “Magnafloats” Executive Game Paperweight, (winner of the prestigious British Gift and Jewellery Federation “Gift of the Year” award), the “Therm-au-Rouge” red wine warming sleeve, the “Bacchus” Decanter Driers, “The Ultimate Executive Lunch” Scratch’n Sniff book and “The Development of the Golf Ball” lidded Desk Tidy Box.</p>
+              <p>After 45 years as a creative entrepreneur, he sold his successful business. His love of food led to him being appointed as Hotel Inspector for Britain’s oldest established guide to prestigious Hotels. He also focused on being a published Author and Public Speaker.</p>
+              <p>A member of the Royal Horticultural Society and elected member of the Royal Historical Society, Stefan brings first-hand experience, a love of research, deep curiosity and an international perspective to every engagement.</p>
+              <p>On cruise ships, (57 cruises to date as Guest Speaker), he socialises with Guests, volunteers to act as escort on excursions, hosts tables and is happy to be approached by Guests with questions at any time.</p>
             </div>
           </div>
         </section>
