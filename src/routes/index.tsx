@@ -154,7 +154,8 @@ function Index() {
                   <h3 className="mt-6 font-display text-3xl">{item.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-primary-foreground/65">{item.text}</p>
                 </article>
-              ))}
+                );
+              })}
             </div>
 
             <div className="mt-16">
