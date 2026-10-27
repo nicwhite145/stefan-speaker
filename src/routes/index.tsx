@@ -31,6 +31,9 @@ const expertise = [
   { number: "04", title: "Climate & conservation", text: "Clear, informed perspectives on climate change and the conservation questions of our age." },
   { number: "05", title: "Golf", text: "The history, personalities and psychology behind one of the world’s most enduring games." },
   { number: "06", title: "Horticulture", text: "Pioneering gardeners, social history and the people who transformed our landscapes." },
+  { number: "07", title: "Political leaders", text: "Insightful biographies of significant world leaders who have influenced history, often leading fights for independence and freedom." },
+  { number: "08", title: "Food & drink", text: "Informed talks on regional speciality food and drinks, drawing on his love of food and experience as a hotel inspector. These can often be paired with sample tastings." },
+  { number: "09", title: "The rise and fall of civilisations", text: "How past major civilisations made themselves great and why they ultimately failed." },
 ];
 
 function Index() {
@@ -143,8 +146,10 @@ function Index() {
               <p className="max-w-xl text-base leading-7 text-primary-foreground/70 lg:justify-self-end">Every talk is designed to be informative, relevant and entertaining—giving audiences new stories to take away and share.</p>
             </div>
             <div className="mt-12 grid border-t border-primary-foreground/20 md:grid-cols-2 lg:grid-cols-3">
-              {expertise.map((item, index) => (
-                <article key={item.title} className={`border-b border-primary-foreground/20 py-7 md:px-6 lg:border-r lg:px-8 ${index % 3 === 2 ? "lg:border-r-0" : ""} ${index % 2 === 1 ? "md:border-r-0 lg:border-r" : "md:border-r"} ${index === expertise.length - 1 && expertise.length % 3 !== 0 ? "lg:border-r-0" : ""}`}>
+              {expertise.map((item, index) => {
+                const isLast = index === expertise.length - 1;
+                return (
+                <article key={item.title} className={`border-b border-primary-foreground/20 py-7 md:px-6 lg:px-8 ${index % 3 === 2 || (isLast && expertise.length % 3 !== 0) ? "lg:border-r-0" : "lg:border-r"} ${index % 2 === 1 || (isLast && expertise.length % 2 !== 0) ? "md:border-r-0" : "md:border-r"}`}>
                   <span className="text-xs font-semibold tracking-[0.16em] text-accent">{item.number}</span>
                   <h3 className="mt-6 font-display text-3xl">{item.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-primary-foreground/65">{item.text}</p>
@@ -190,7 +195,9 @@ function Index() {
               <p className="mt-5 font-display text-3xl leading-snug text-primary">Entrepreneur, expedition leader, traveller and lifelong storyteller.</p>
             </div>
             <div className="space-y-6 text-lg leading-8 text-foreground/75">
-              <p>Stefan began his career with Cadbury’s before, in his twenties, organising and leading an expedition from England to Jerusalem, following an historic route taken by Pilgrims in the 11th century, returning back to England along the North African coast, thereby circumnavigating the entire Mediterranean Sea.</p>
+              <p>Stefan began his career with Cadbury’s, starting in their Management Training Programme. Working through practically all of the Departments in their Bournville Headquarters, he progressed to appointments in Managerial Sales.</p>
+              <p>In his twenties, he organised and led an expedition from England to Jerusalem, following an historic route through Europe and the Middle East taken by Pilgrims in the 11th century, returning back to England along the North African coast, thereby circumnavigating the entire Mediterranean Sea.</p>
+              <p>Having experienced a good background in manufacturing and marketing, his entrepreneurial genes led him to the best source of Business Administration study, Boston, Massachusetts, USA. On his return he researched and found the niche market he was seeking – Gifts for Men.</p>
               <p>He founded and built Hurley Style into an international, market-leading Giftware business, selling original designs in 30 countries. He designed and developed more than 450 different products, focusing on Men’s Gifts, Decorative Accessories, Wine Accessories and wine-themed Gifts. His best-selling items were the “Magnafloats” Executive Game Paperweight, (winner of the prestigious British Gift and Jewellery Federation “Gift of the Year” award), the “Therm-au-Rouge” red wine warming sleeve, the “Bacchus” Decanter Driers, “The Ultimate Executive Lunch” Scratch’n Sniff book and “The Development of the Golf Ball” lidded Desk Tidy Box.</p>
               <p>After 45 years as a creative entrepreneur, he sold his successful business. His love of food led to him being appointed as Hotel Inspector for Britain’s oldest established guide to prestigious Hotels. He also focused on being a published Author and Public Speaker.</p>
               <p>A member of the Royal Horticultural Society and elected member of the Royal Historical Society, Stefan brings first-hand experience, a love of research, deep curiosity and an international perspective to every engagement.</p>
